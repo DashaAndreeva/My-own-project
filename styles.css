@@ -1,8 +1,43 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .site-logo {
   color: #f07f2e;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.5px;
 }
 
-footer {
-  background-color: #f07f2e;
+.page-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.page-nav a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.page-nav a:hover {
+  color: #f07f2e;
 }
