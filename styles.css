@@ -2,14 +2,40 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-ul {
-  list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 944px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
 .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px;
 }
 
 .site-logo {
@@ -40,4 +66,9 @@ ul {
 
 .page-nav a:hover {
   color: #f07f2e;
+}
+
+/* Main */
+/* Section 2 */
+.section-title {
 }
