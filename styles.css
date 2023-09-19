@@ -85,12 +85,16 @@ img {
   line-height: 40px;
   letter-spacing: 0.5px;
   color: #2c2c2c;
-  margin-bottom: 40px;
+}
+
+.section-text {
+  margin-top: 8px;
 }
 
 .cat-list {
   display: flex;
   gap: 40px;
+  margin-top: 40px;
 }
 
 .cat-list li {
@@ -108,4 +112,19 @@ img {
 
 .cat-list h3 {
   margin-bottom: 8px;
+}
+
+/* Section 3 */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.gallery li {
+  flex-basis: calc((100% - 5 * 16px) / 6);
+  border-radius: 16px;
+  overflow: hidden;
 }
