@@ -89,12 +89,15 @@ img {
 
 .section-text {
   margin-top: 8px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
 }
 
 .cat-list {
   display: flex;
   gap: 40px;
   margin-top: 40px;
+  color: #2c2c2c;
 }
 
 .cat-list li {
@@ -114,6 +117,12 @@ img {
   margin-bottom: 8px;
 }
 
+.cat-list p {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #2c2c2c;
+}
+
 /* Section 3 */
 
 .gallery {
@@ -129,4 +138,53 @@ img {
   overflow: hidden;
 }
 
+.gallery li:hover {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
 /* Footer */
+
+.page-footer {
+  margin-top: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #0f3f3c;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.social-text {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.social-links a:hover {
+  background-color: #f07f2e;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+}
