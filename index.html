@@ -14,6 +14,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"></script>
+    <link rel="stylesheet" href="./main.js" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -35,22 +42,67 @@
       </nav>
     </header>
     <main>
-      <div class="hero container">
-        <section class="greating">
-          <h1>Привіт, людино</h1>
-          <p>
-            Бракує в житті шовкових лапок, м'якенького пухнастого животика,
-            теплого муррркотіння й веселого розгардіяшу? Візьми собі котика.
-          </p>
-        </section>
-      </div>
+      <section class="hero">
+        <div class="container">
+          <ul class="hero-list list">
+            <li class="hero-item first">
+              <div class="greeting">
+                <h1>Привіт, людино</h1>
+                <p>
+                  Бракує в житті шовкових лапок, м’якенького пухнастого
+                  животика, теплого муррркотіння й веселого розгардіяшу? Візьми
+                  собі котика.
+                </p>
+              </div>
+            </li>
+            <li class="hero-item second">
+              <div class="greeting">
+                <h1>Нарешті ти тут</h1>
+                <p>
+                  Люди й котики разом завжди щасливіші. Тож додай у своє життя
+                  щастячка. Чекаємо тебе!<br />
+                  Візьми собі котика.
+                </p>
+              </div>
+            </li>
+            <li class="hero-item third">
+              <div class="greeting">
+                <h1>Котики чекають</h1>
+                <p>
+                  Вибери того, що створений для тебе. Нехай сама любов муркоче
+                  тобі на вушко й торкається лапкою. <br />
+                  Візми собі котика.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="hero-buttons">
+            <button type="button" class="hero-btn next">
+              <img
+                src="./images/arrow-right.svg"
+                alt="стрілка вправо"
+                width="24"
+                height="24"
+              />
+            </button>
+            <button type="button" class="hero-btn prev">
+              <img
+                src="./images/arrow-left.svg"
+                alt="стрілка вліво"
+                width="24"
+                height="24"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
 
       <section class="section container">
         <h2 class="section-title">
           Ці друзяки готові приймати твою любов і піклування
         </h2>
         <ul class="cat-list">
-          <li>
+          <li data-aos="flip-left">
             <img
               src="./images/cat-barbaris.jpg"
               alt="Сіро-білий котик з полосками на сірій частині"
@@ -60,14 +112,14 @@
               <p>Хижий для ворогів, ласкавий та м’якесенький до своїх.</p>
             </div>
           </li>
-          <li>
+          <li data-aos="flip-left">
             <img src="./images/cat-mishka.jpg" alt="Сіро-біле кошеня" />
             <div class="content">
               <h3>Мишка</h3>
               <p>Киця з роду котів-талісманів. Несе удачу та затишок в дім.</p>
             </div>
           </li>
-          <li>
+          <li data-aos="flip-left">
             <img src="./images/cat-capitan.jpg" alt="Сірий полосатий котик" />
             <div class="content">
               <h3>Капітан</h3>
@@ -84,77 +136,101 @@
           На місці цих задоволених людей можеш бути ти.
         </p>
         <ul class="gallery">
-          <li>
-            <img
-              src="./images/cat-card1.jpg"
-              alt="Біло-риже полосате кошеня на руках у хазяїна"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card1-big.jpg">
+              <img
+                src="./images/cat-card1.jpg"
+                alt="Біло-риже полосате кошеня на руках у хазяїна"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card2.jpg"
-              alt="Чорно-біле кошеня на руках у хазяїна"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card2-big.jpg">
+              <img
+                src="./images/cat-card2.jpg"
+                alt="Чорно-біле кошеня на руках у хазяїна"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card3.jpg"
-              alt="Біле кошеня на руках у хазяїна"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card3-big.jpg">
+              <img
+                src="./images/cat-card3.jpg"
+                alt="Біле кошеня на руках у хазяїна"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card4.jpg"
-              alt="Біло-риже кошеня разом з хазяйкою"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card4-big.jpg">
+              <img
+                src="./images/cat-card4.jpg"
+                alt="Біло-риже кошеня разом з хазяйкою"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card5.jpg"
-              alt="Хазяйка обіймає своє коричневе кошеня"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card5-big.jpg">
+              <img
+                src="./images/cat-card5.jpg"
+                alt="Хазяйка обіймає своє коричневе кошеня"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card6.jpg"
-              alt="Трьокольорове кошеня з хазяйкою"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card6-big.jpg">
+              <img
+                src="./images/cat-card6.jpg"
+                alt="Трьокольорове кошеня з хазяйкою"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card7.jpg"
-              alt="Сіре полосате кошеня на руках у хазяйки"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card7-big.jpg">
+              <img
+                src="./images/cat-card7.jpg"
+                alt="Сіре полосате кошеня на руках у хазяйки"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card8.jpg"
-              alt="Два кошеня- сіре і риже на руках хазяйки"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card8-big.jpg">
+              <img
+                src="./images/cat-card8.jpg"
+                alt="Два кошеня- сіре і риже на руках хазяйки"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card9.jpg"
-              alt="Сіре кошеня на руках у хазяйки"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card9-big.jpg">
+              <img
+                src="./images/cat-card9.jpg"
+                alt="Сіре кошеня на руках у хазяйки"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card10.jpg"
-              alt="Чорний кіт разом з хазяйкою"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card10-big.jpg">
+              <img
+                src="./images/cat-card10.jpg"
+                alt="Чорний кіт разом з хазяйкою"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card11.jpg"
-              alt="Трьокольорове кошеня обіймається з хазяйкою"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card11-big.jpg">
+              <img
+                src="./images/cat-card11.jpg"
+                alt="Трьокольорове кошеня обіймається з хазяйкою"
+              />
+            </a>
           </li>
-          <li>
-            <img
-              src="./images/cat-card12.jpg"
-              alt="Полосата сіра киця обіймає хазяйку"
-            />
+          <li data-aos="flip-left">
+            <a href="./images/cat-card12-big.jpg">
+              <img
+                src="./images/cat-card12.jpg"
+                alt="Полосата сіра киця обіймає хазяйку"
+              />
+            </a>
           </li>
         </ul>
       </section>
@@ -198,5 +274,9 @@
         </section>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.js"></script>
+    <script src="siema.min.js"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>

@@ -66,6 +66,7 @@ img {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.5px;
+  transition: color 0.3s ease-in-out;
 }
 
 .page-nav a:hover {
@@ -79,37 +80,87 @@ img {
 /* Section 1 */
 
 .hero {
-  position: relative;
   height: 480px;
+}
+
+.hero > .container {
+  height: 100%;
+  position: relative;
+}
+
+.hero-list {
+  height: 100%;
+  position: relative;
+}
+
+.hero-item {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background-color: orange;
   border-radius: 16px;
-  background-image: url(./images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.greating {
+.hero-item.first {
+  background-image: url(./images/hero-img.jpg);
+}
+
+.hero-item.second {
+  background-image: url(./images/hero-img-second.jpg);
+}
+
+.hero-item.third {
+  background-image: url(./images/hero-img-thirth.jpg);
+}
+
+.greeting {
   position: absolute;
-  bottom: 28px;
   left: 28px;
+  bottom: 52px;
   padding: 24px;
+  background: #0f3f3c;
   border-radius: 16px;
-  background-color: #0f3f3c;
   width: 432px;
 }
 
-.greating h1 {
+.greeting h1 {
+  font-size: 32px;
   line-height: 32px;
   letter-spacing: 1.25px;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
-.greating p {
+.greeting p {
   line-height: 24px;
   letter-spacing: 0.5px;
-  color: #fff;
-  margin-top: 8px;
+  color: #ffffff;
+}
+
+.hero-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hero-btn.next {
+  right: 36px;
+}
+
+.hero-btn.prev {
+  left: 36px;
 }
 
 /* Section 2 */
@@ -135,6 +186,7 @@ img {
 }
 
 .cat-list li {
+  cursor: pointer;
   overflow: hidden;
   border-radius: 16px;
 }
@@ -170,6 +222,7 @@ img {
   flex-basis: calc((100% - 5 * 16px) / 6);
   border-radius: 16px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .gallery li:hover {
